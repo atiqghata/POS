@@ -36,15 +36,33 @@
                                                         </div>
                                                         <hr>
                                                         <div class="row">
-                                                            <div class="col-sm-12"><div class="pull-left">
-                                                            <div class="dataTables_length" id="example2_length">
-                                                            <label>Show <select name="example2_length" aria-controls="example2" class="form-control input-sm">
-                                                            <option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div></div><div class="pull-right"><div id="example2_filter" class="dataTables_filter">
-                                                            <label class="mt-2">
-                                                            <input type="search" class="form-control input-sm" placeholder="Search" aria-controls="example2"></label></div>
-                                                            <div id="example2_processing" class="dataTables_processing panel panel-default" style="display: none;"><div class="text-primary bg-primary" style="position: relative;z-index:100;overflow: visible;">Processing...</div></div></div><div class="pull-right margin-left-10 ">
-                                                            <div class="dt-buttons btn-group mt-4 mr-2">              
-                                                            </div></div></div>
+                                                            <div class="col-sm-12">
+                                                                <div class="pull-left">
+                                                                    <div class="dataTables_length" id="example2_length">
+                                                                        <label>Show 
+                                                                            <select name="example2_length" aria-controls="example2" class="form-control input-sm">
+                                                                                <option value="10">10</option>
+                                                                                <option value="25">25</option>
+                                                                                <option value="50">50</option>
+                                                                                <option value="100">100</option>
+                                                                            </select>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pull-right">
+                                                                    <div id="example2_filter" class="dataTables_filter">
+                                                                        <label class="mt-2">
+                                                                            <input type="search" class="form-control input-sm" placeholder="Search" aria-controls="example2">
+                                                                        </label>
+                                                                    </div>
+                                                                    <div id="example2_processing" class="dataTables_processing panel panel-default" style="display: none;"><div class="text-primary bg-primary" style="position: relative;z-index:100;overflow: visible;">Processing...</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pull-right margin-left-10 ">
+                                                                    <div class="dt-buttons btn-group mt-4 mr-2">              
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
@@ -54,129 +72,31 @@
                                                                     <tr role="row"><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 304px;" aria-label="State Name: activate to sort column ascending">State Name</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 360px;" aria-label="Country Name: activate to sort column ascending">Country Name</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 207px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 269px;" aria-label="Action">Action</th></tr>
                                                                     </thead>
                                                                     <tbody>
-                                        <tr role="row">
-                                            <td>Karachi</td>
-                                            <td>Pakistan</td>
-                                            <td> <span>Active</span></td>
-                                        <td>
-                                        <div class="btn-group" title="View Account">
-                                        <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                        Action <span class="caret"></span>
-                                        </a>
-                                        <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                        <a href="#">
-                                            <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                        </a>
-                                        </li>
-                                        <li>
-                                        <a href="#">
-                                            <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                        </a>
-                                        </li>
-                                        </ul>
-                                        </div>
-                                        </td>
-                                        </tr>
-                                        <tr role="row"><td>Karachi</td>
-                                        <td>Pakistan</td>
-                                        <td>
-                                        <span>Active</span>
-                                        </td>
-                                        <td>
-                                        <div class="btn-group" title="View Account">
-                                        <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                        Action <span class="caret"></span>
-                                        </a>
-                                        <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                            <a href="#">
-                                                <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                            </a>
-                                        </li>
-                                        </ul>
-                                        </div>
-                                        </td>
-                                        </tr>
-                                        <tr role="row"><td>Karachi</td>
-                                        <td>Pakistan</td>
-                                        <td>
-                                        <span>Active</span>
-                                        </td>
-                                        <td>
-                                            <div class="btn-group" title="View Account">
-                                                <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                                    Action <span class="caret"></span>
-                                                </a>
-                                                <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                                        <a href="#">
-                                                            <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                           
-                                            </div>
-                                             </td>
-                                        </tr>
-                                                <tr role="row">
-                                                    <td>Karachi</td>
-                                                    <td>Pakistan</td>
-                                                <td>
-                                                    <span>Active</span>
-                                                </td>
-                                                    <td>
-                                                        <div class="btn-group" title="View Account">
-                                                            <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                Action <span class="caret"></span>
-                                                            </a>
-                                                            <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                                                    <a href="#">
-                                                                        <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#">
-                                                                        <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                            </tr>
-                                                            <tr role="row"><td>Karachi</td>
-                                                                <td>Pakistan</td>
-                                                            <td>
-                                                                <span>Active</span>
-                                                            </td>
-                                                                <td>
-                                                                    <div class="btn-group" title="View Account">
-                                                                        <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                            Action <span class="caret"></span>
-                                                                        </a>
-                                                                        <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                                                                <a href="#">
-                                                                                    <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#">
-                                                                                    <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                        </td>
+                                                                         <tr v-for="data in apidata" v-bind:key="data.index">
+                                                                            <td>{{data.Country}}</td>
+                                                                            <td>{{data.State_Name}}</td>
+                                                                            <td>Active</td>
+                                                                            <td>
+                                                                                <div class="btn-group" title="View Account">
+                                                                                    <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                                                                        Action <span class="caret"></span>
+                                                                                    </a>
+                                                                                    <ul role="menu" class="dropdown-menu dropdown-light pull-right">
+                                                                                        <li>
+                                                                                            <a :href="`http://192.168.100.9/Project_Laravel/public/api/state/${data.id}`">
+                                                                                                <i class="fa fa-fw fa-edit text-blue"></i>Edit
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a :href="`http://192.168.100.9/Project_Laravel/public/api/state/${data.id}`">
+                                                                                                <i class="fa fa-fw fa-trash text-red"></i>Delete
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
                                                                         </tr>
                                                                     </tbody>                         
-
                                                             </table>
                                                             <div class="next d-flex justify-content-between align-items-center">
                                                                 <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 22 entries</div><div class="dataTables_paginate paging_simple_numbers" id="example2_paginate"></div>
@@ -210,11 +130,40 @@ import Footer from  '../../components/Footer.vue'
 
 export default {
     name:'',
+    data(){
+        return{
+            apidata:[]
+        }
+    },
     components: {
-    Navbar,
-    Sidebar,
-    Footer
-}
+        Navbar,
+        Sidebar,
+        Footer
+    },
+    mounted(){
+         this.statedata()
+         this.axifunc()
+        //  console.log(this.apidata)
+    },
+    methods:{
+        statedata: async function(){
+            try{
+                fetch('http://192.168.100.9/Project_Laravel/public/api/state').then( function(response){
+                   response.json().then(function(data){
+                       this.apidata = data;
+                   }.bind(this))
+                }.bind(this))
+                // var response = api.json()
+                // console.log(api)
+                // this.apidata = response
+            }catch(error){
+                console.log(error)
+            }
+        },
+        axifunc: function(){
+            
+        }
+    }
 
 }
 </script>

@@ -52,42 +52,29 @@
                                                                 <tr role="row"><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 507px;" aria-label="Country Name: activate to sort column ascending">Country Name</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 298px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 374px;" aria-label="Action">Action</th></tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr role="row" class="odd"><td tabindex="0">Turkey</td>
-                                                                    <td><span>Active </span></td><td>
-                                                                        <div class="btn-group" title="View Account">
-                                                                        <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                            Action <span class="caret"></span>
-                                                                        </a>
-                                                                        <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                                                                <a title="Edit Record ?" href="#">
-                                                                                    <i class="fa fa-fw fa-edit text-blue"></i>Edit
-                                                                                </a>
-                                                                            </li><li>
-                                                                                <a href="#">
-                                                                                    <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                                                                </a>
-                                                                            </li>
-                                                                            
-                                                                        </ul>
-                                                                        </div></td></tr><tr role="row" class="even">
-                                                                            <td tabindex="0">Iran</td>
-                                                                            <td><span>Active </span></td>
-                                                                            <td><div class="btn-group" title="View Account">
-                                                                            <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
-                                                                                Action <span class="caret"></span>
-                                                                            </a>
-                                                                            <ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
-                                                                                    <a title="Edit Record ?" href="#">
-                                                                                        <i class="fa fa-fw fa-edit text-blue"></i>Edit
+                                                                  <tr v-for="data in apidata" v-bind:key="data.index">
+                                                                            <td>{{data.Country_Name}}</td>
+                                                                            <td>Active</td>
+                                                                            <td>
+                                                                                <div class="btn-group" title="View Account">
+                                                                                    <a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+                                                                                        Action <span class="caret"></span>
                                                                                     </a>
-                                                                                </li><li>
-                                                                                    <a style="cursor:pointer" title="Delete Record ?" onclick="delete_country(1)">
-                                                                                        <i class="fa fa-fw fa-trash text-red"></i>Delete
-                                                                                    </a>
-                                                                                </li>
-                                                                                
-                                                                            </ul>
-                                                                        </div></td></tr>
+                                                                                    <ul role="menu" class="dropdown-menu dropdown-light pull-right">
+                                                                                        <li>
+                                                                                            <a :href="`http://192.168.100.9/Project_Laravel/public/api/country/${data.id}`">
+                                                                                                <i class="fa fa-fw fa-edit text-blue"></i>Edit
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a :href="`http://192.168.100.9/Project_Laravel/public/api/state/${data.id}`">
+                                                                                                <i class="fa fa-fw fa-trash text-red"></i>Delete
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
                                                             </tbody>                                 
                                                         </table>
                                                         <div class="next d-flex justify-content-between align-items-center">
@@ -122,11 +109,38 @@ import Footer from  '../../components/Footer.vue'
 
 export default {
     name:'',
+    data(){
+        return{
+            apidata:[]
+        }
+    },
     components: {
     Navbar,
     Sidebar,
     Footer
-}
+    },
+    mounted(){
+         this.statedata()
+        //  console.log(this.apidata)
+    },
+    methods:{
+        statedata: function(){
+            try{
+                fetch('http://192.168.100.9/Project_Laravel/public/api/country').then( function(response){
+                   response.json().then(function(data){
+                    //    console.log(data)
+                       this.apidata = data;
+
+                   }.bind(this))
+                }.bind(this))
+                // var response = api.json()
+                // console.log(api)
+                // this.apidata = response
+            }catch(error){
+                console.log(error)
+            }
+        }
+    }
 
 }
 </script>
